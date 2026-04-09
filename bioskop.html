@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Bioskop Mini</title>
+<link rel="stylesheet" href="bioskop.css">
+</head>
+<body>
+
+<h1>🎬 BIOSKOP MINI</h1>
+
+<input type="text" id="search" placeholder="Cari film...">
+
+<div class="film-container" id="filmList">
+
+  <!-- FILM 1 -->
+  <div class="film">
+    <img src="andai-ibu-tidak-menikah-dengan-ayah.jpg">
+    <h3>Film 1</h3>
+    <p>Durasi: 120 menit</p>
+    <p>Harga: Rp 30.000</p>
+    <button onclick="pilihFilm('Film 1',30000)">Pilih</button>
+    <button onclick="watchlist('Film 1')">❤️</button>
+  </div>
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="Apollo.jpg">
+    <h3>Apollo 10½: A Space Age Childhood (2022)</h3>
+    <p>Durasi: 98 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Apollo 10½: A Space Age Childhood (2022)',15000)">Pilih</button>
+    <button onclick="watchlist('Apollo 10½: A Space Age Childhood (2022)')">❤️</button>
+  </div>
+
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="dog-man.jpg">
+    <h3>Dog Man (2025)</h3>
+    <p>Durasi: 89 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Dog Man (2025)',15000)">Pilih</button>
+    <button onclick="watchlist('Dog Man (2025)')">❤️</button>
+  </div>
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="FARMAGEDDON.jpg">
+    <h3>A Shaun the Sheep Movie: Farmageddon (2019)</h3>
+    <p>Durasi: 86 hingga 87 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('A Shaun the Sheep Movie: Farmageddon (2019)',15000)">Pilih</button>
+    <button onclick="watchlist('A Shaun the Sheep Movie: Farmageddon (2019)')">❤️</button>
+  </div>
+
+  
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="film-the-mitchells.jpg">
+    <h3>The Mitchells vs. the Machines (2021)</h3>
+    <p>Durasi: 1 jam 53 menit hingga 1 jam 54 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('The Mitchells vs. the Machines (2021)',15000)">Pilih</button>
+    <button onclick="watchlist('The Mitchells vs. the Machines (2021)')">❤️</button>
+  </div>
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="grave-of-the-fireflies.jpg">
+    <h3>Grave of the Fireflies (1988)</h3>
+    <p>Durasi: 89 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Grave of the Fireflies (1988)',15000)">Pilih</button>
+    <button onclick="watchlist('Grave of the Fireflies (1988)')">❤️</button>
+  </div>
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="kung-fu-panda.jpg">
+    </h3>Kung Fu Panda (2008)</h3>
+    <p>88 hingga 92 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Kung Fu Panda (2008)',15000)">Pilih</button>
+    <button onclick="watchlist('Kung Fu Panda (2008)')">❤️</button>
+  </div>
+
+  
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="ilmb.jpg">
+    <h3>I Lost My Body (2019)</h3>
+    <p>Durasi: 81 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('I Lost My Body (2019)',15000)">Pilih</button>
+    <button onclick="watchlist('I Lost My Body (2019)')">❤️</button>
+  </div>
+
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="kpop-demon.jpg">
+    <h3>KPop Demon Hunters (2025)</h3>
+    <p>Durasi: 95 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('KPop Demon Hunters (2025)',15000)">Pilih</button>
+    <button onclick="watchlist('KPop Demon Hunters (2025)')">❤️</button>
+  </div>
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="kubo-and-the-two.jpg">
+    <h3>Kubo and the Two Strings (2016)</h3>
+    <p>Durasi: 101 hingga 102 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Kubo and the Two Strings (2016)',15000)">Pilih</button>
+    <button onclick="watchlist('Kubo and the Two Strings (2016)')">❤️</button>
+  </div>
+
+  <!-- FILM 2 -->
+  <div class="film">
+    <img src="leo.jpg">
+    <h3>Leo (2023)</h3>
+    <p>Durasi: 1 jam 42 menit (102 menit)</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Leo (2023)',15000)">Pilih</button>
+    <button onclick="watchlist('Leo (2023)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="mcdchru.jpg">
+    <h3>Chicken Run (2000)</h3>
+    <p>Durasi: 84 hingga 85 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Chicken Run (2000)',15000)">Pilih</button>
+    <button onclick="watchlist('Chicken Run (2000)w')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="NETFLIX_A-Whisker-Away.jpg">
+    <h3>A Whisker Away (2020)</h3>
+    <p>Durasi: 104 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('A Whisker Away (2020)',15000)">Pilih</button>
+    <button onclick="watchlist('A Whisker Away (2020)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="NETFLIX_KLAUS.jpg">
+    <h3>Klaus (2019)</h3>
+    <p>Durasi: 97 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Klaus (2019)',15000)">Pilih</button>
+    <button onclick="watchlist('Klaus (2019)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="NETFLIX_THE-MITCHELLS.jpg">
+    <h3>The Mitchells vs. the Machines (2021)</h3>
+    <p>Durasi: 1 jam 53 menit hingga 1 jam 54 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('The Mitchells vs. the Machines (2021)',15000)">Pilih</button>
+    <button onclick="watchlist('The Mitchells vs. the Machines (2021)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="NETFLIX_VIVO.jpg">
+    <h3>Vivo (2021)</h3>
+    <p>Durasi: 95 menit atau 1 jam 35 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Vivo (2021)',15000)">Pilih</button>
+    <button onclick="watchlist('Vivo (2021)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="nimona.jpg">
+    <h3>Nimona (2023)</h3>
+    <p>Durasi: 99 menit hingga 102 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Nimona (2023)',15000)">Pilih</button>
+    <button onclick="watchlist('Nimona (2023)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="orion.jpg">
+    <h3>Orion and the Dark (2024)</h3>
+    <p>Durasi: 90 hingga 93 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Orion and the Dark (2024)',15000)">Pilih</button>
+    <button onclick="watchlist('Orion and the Dark (2024)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="Over_The_Moon.jpg">
+    <h3>Over the Moon (2020)</h3>
+    <p>Durasi: 100 menit atau 1 jam 40 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Over the Moon (2020)',15000)">Pilih</button>
+    <button onclick="watchlist('Over the Moon (2020)')">❤️</button>
+  </div>
+
+
+  <div class="film">
+    <img src="PINOCCHIO.jpg">
+    <h3>Guillermo del Toro's Pinocchio (2022)</h3>
+    <p>Durasi: 1 jam 57 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Guillermo del Toro's Pinocchio (2022)',15000)">Pilih</button>
+    <button onclick="watchlist('Guillermo del Toro')">❤️</button>
+  </div>
+
+
+
+  <div class="film">
+    <img src="Suzume.jpg">
+    <h3>Suzume (2022)</h3>
+    <p>Durasi: 122 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Suzume (2022)',15000)">Pilih</button>
+    <button onclick="watchlist('Suzume (2022)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="The_Sea_Beast.jpg">
+    <h3>The Sea Beast (2022)</h3>
+    <p>Durasi: 115 hingga 119 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('The Sea Beast (2022)',15000)">Pilih</button>
+    <button onclick="watchlist('The Sea Beast (2022)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Teenage-Mutant-Ninja.jpg">
+    <h3>Teenage Mutant Ninja Turtles: Mutant Mayhem (2023)</h3>
+    <p>Durasi: 99 menit atau 1 jam 39 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Teenage Mutant Ninja Turtles: Mutant Mayhem (2023)',15000)">Pilih</button>
+    <button onclick="watchlist('Teenage Mutant Ninja Turtles: Mutant Mayhem (2023)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="wallace-gromit-vengeance-most.jpg">
+    <h3>Wallace & Gromit: Vengeance Most Fowl (2024)</h3>
+    <p>Durasi: 79 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Wallace & Gromit: Vengeance Most Fowl (2024)',15000)">Pilih</button>
+    <button onclick="watchlist('Wallace & Gromit: Vengeance Most Fowl (2024)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="the-wild-robot17.jpg">
+    <h3>The Wild Robot (2024)</h3>
+    <p>Durasi: 102 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('The Wild Robot (2024)',15000)">Pilih</button>
+    <button onclick="watchlist('The Wild Robot (2024)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="bring,jpg.jpg">
+    <h3>Bring Her Back (2025)</h3>
+    <p>Durasi: 104 menit</p>
+    <p>Harga: Rp 15.000</p>
+    <button onclick="pilihFilm('Bring Her Back (2025)',15000)">Pilih</button>
+    <button onclick="watchlist('Bring Her Back (2025)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="penggantin.jpg">
+    <h3>Pengantin Iblis (2025)</h3>
+    <p>Durasi: 102 hingga 105 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('jPengantin Iblis (2025)',15000)">Pilih</button>
+    <button onclick="watchlist('Pengantin Iblis (2025)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="The Deliverance (2024).jpg">
+    <h3>The Deliverance (2024)</h3>
+    <p>Durasi:  112 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('The Deliverance (2024)',15000)">Pilih</button>
+    <button onclick="watchlist('The Deliverance (2024)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="kkn.jpg">
+    <h3>KKN di Desa Penari (2022)</h3>
+    <p>Durasi: 121 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('KKN di Desa Penari (2022)',15000)">Pilih</button>
+    <button onclick="watchlist('KKN di Desa Penari (2022)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Train to Busan (2016).jpg">
+    <h3>Train to Busan (2016)</h3>
+    <p>Durasi: 118 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Train to Busan (2016)',15000)">Pilih</button>
+    <button onclick="watchlist('Train to Busan (2016)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="pengabdi setan.jpg">
+    <h3>Pengabdi Setan (2017)</h3>
+    <p>Durasi: 107 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Pengabdi Setan (2017)',15000)">Pilih</button>
+    <button onclick="watchlist('Pengabdi Setan (2017)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="The Conjuring (2013).jpg">
+    <h3>The Conjuring (2013)</h3>
+    <p>Durasi:  (112 menit)</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('The Conjuring (2013)',15000)">Pilih</button>
+    <button onclick="watchlist('The Conjuring (2013)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="bayi ajaib.jpg">
+    <h3>Bayi Ajaib (2023)</h3>
+    <p>Durasi: 97 hingga 99 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Bayi Ajaib (2023)',15000)">Pilih</button>
+    <button onclick="watchlist('Bayi Ajaib (2023)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Perempuan Tanah Jahanam (2019).jpg">
+    <h3>Perempuan Tanah Jahanam (2019)</h3>
+    <p>Durasi: 106 hingga 107 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Perempuan Tanah Jahanam (2019)',15000)">Pilih</button>
+    <button onclick="watchlist('Perempuan Tanah Jahanam (2019)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="A Quiet Place (2018).jpg">
+    <h3>A Quiet Place (2018)</h3>
+    <p>Durasi: 90 hingga 95 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('A Quiet Place (2018)',15000)">Pilih</button>
+    <button onclick="watchlist('A Quiet Place (2018)')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Mowgli.jpg">
+    <h3>Mowgli</h3>
+    <p>Durasi: 1 jam 44 menit hingga 1 jam 45 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Mowgli',15000)">Pilih</button>
+    <button onclick="watchlist('Mowgli')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Charlie and the Chocolate Factory.jpg">
+    <h3>Charlie and the Chocolate Factory</h3>
+    <p>Durasi: 115 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Charlie and the Chocolate Factory',15000)">Pilih</button>
+    <button onclick="watchlist('Charlie and the Chocolate Factory')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Richie Rich.jpg">
+    <h3>Richie Rich</h3>
+    <p>Durasi: 95 hingga 96 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Richie Rich',15000)">Pilih</button>
+    <button onclick="watchlist('Richie Rich')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Despicable Me.jpg">
+    <h3>Despicable Me</h3>
+    <p>Durasi: 95 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Despicable Me',15000)">Pilih</button>
+    <button onclick="watchlist('Despicable Me')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="minio.jpg">
+    <h3>Minions</h3>
+    <p>Durasi:  91 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Minions',15000)">Pilih</button>
+    <button onclick="watchlist('Minions')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Hotel Transylvania.jpg">
+    <h3>Hotel Transylvania</h3>
+    <p>Durasi: 91 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Hotel Transylvania',15000)">Pilih</button>
+    <button onclick="watchlist('Hotel Transylvania')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Madagascar.jpg">
+    <h3>Madagascar</h3>
+    <p>Durasi:</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Madagascar',15000)">Pilih</button>
+    <button onclick="watchlist('Madagascar')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Smurfs.jpg">
+    <h3>Smurfs</h3>
+    <p>Durasi:92 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Smurfs',15000)">Pilih</button>
+    <button onclick="watchlist('Smurfs')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Teletubbies.jpg">
+    <h3>Teletubbies</h3>
+    <p>Durasi:  25 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Teletubbies',15000)">Pilih</button>
+    <button onclick="watchlist('Teletubbies')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="The Boss Babyn.jpg">
+    <h3>The Boss Baby: Back in Business</h3>
+    <p>Durasi: 24 menit per episode</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('The Boss Baby: Back in Business',15000)">Pilih</button>
+    <button onclick="watchlist('The Boss Baby: Back in Business')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Godzilla Minus One.jpg">
+    <h3>Godzilla Minus One (2023)</h3>
+    <p>Durasi: 124 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Godzilla Minus One (2023)',15000)">Pilih</button>
+    <button onclick="watchlist('Godzilla Minus One (2023)">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="Parasite (2019) .jpg">
+    <h3>Parasite (2019) </h3>
+    <p>Durasi: 132 hingga 133 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Parasite (2019) ',15000)">Pilih</button>
+    <button onclick="watchlist('Parasite (2019) ')">❤️</button>
+  </div>
+
+  <div class="film">
+    <img src="jumbofoto.jpg">
+    <h3>Jumbo</h3>
+    <p>Durasi: 102 menit</p>
+    <p>Harga: Rp 15.000</p>
+     <button onclick="pilihFilm('Jumbo',15000)">Pilih</button>
+    <button onclick="watchlist('Jumbo')">❤️</button>
+  </div>
+
+  
+  <!-- DUPLIKASI SAMPAI 1000 -->
+  
+</div>
+
+
+<div>
+
+<h2>🍿 Makanan</h2>
+<div class="makanan">
+  <div class="item">
+    <img src="idomie.jpg">
+    <h3>idomie goreng + telur</h3>
+    <p>Harga: Rp 16.000</p>
+    <button onclick="pilihFilm('idomie goreng + telur',16000)">Pilih</button>
+    <button onclick="watchlist('idomie goreng + telur')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="nasi goreng.jpg">
+    <h3>nasi goreng Biasa</h3>
+    <p>Harga: Rp 13.500</p>
+    <button onclick="pilihFilm('Nasi Goreng Biasa',13500)">Pilih</button>
+    <button onclick="watchlist('Nasi Goreng Biasa')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="nasi goreng special.jpg">
+    <h3>The Wild Robot (2024)</h3>
+    <p>Harga: Rp 19.000</p>
+    <button onclick="pilihFilm('nasi goreng special',19000)">Pilih</button>
+    <button onclick="watchlist('Tnasi goreng special')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="">
+    <h3></h3>
+    <p>Harga: Rp 5.000</p>
+    <button onclick="pilihFilm('aqua',5000)">Pilih</button>
+    <button onclick="watchlist('aqua')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="nasi goreng special.jpg">
+    <h3>The Wild Robot (2024)</h3>
+    <p>Harga: Rp 19.000</p>
+    <button onclick="pilihFilm('nasi goreng special',19000)">Pilih</button>
+    <button onclick="watchlist('Tnasi goreng special')">❤️</button>
+  </div>
+
+
+  <div class="item">
+    <img src="nasi goreng special.jpg">
+    <h3>The Wild Robot (2024)</h3>
+    <p>Harga: Rp 19.000</p>
+    <button onclick="pilihFilm('nasi goreng special',19000)">Pilih</button>
+    <button onclick="watchlist('Tnasi goreng special')">❤️</button>
+  </div>
+
+
+  <div class="item">
+    <img src="nasi goreng special.jpg">
+    <h3>The Wild Robot (2024)</h3>
+    <p>Harga: Rp 19.000</p>
+    <button onclick="pilihFilm('nasi goreng special',19000)">Pilih</button>
+    <button onclick="watchlist('Tnasi goreng special')">❤️</button>
+  </div>
+
+
+</div>
+
+
+
+<div>
+
+<h2>Minuman</h2>
+<div class="Minuman">
+  <div class="item">
+    <img src="aqua.jpg">
+    <h3>aqua</h3>
+    <p>Harga: Rp 6.000</p>
+    <button onclick="pilihFilm('aqua',6000)">Pilih</button>
+    <button onclick="watchlist('aqua')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="es teh cekek.jpg">
+    <h3>aqua.jpg</h3>
+    <p>Harga: Rp 2.000</p>
+    <button onclick="pilihFilm('es teh cekek',2000)">Pilih</button>
+    <button onclick="watchlist('es teh cekek')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="es cekek semua rasa.jpg">
+    <h3>es cekek semua rasa</h3>
+    <p>Harga: Rp 2.000</p>
+    <button onclick="pilihFilm('es cekek semua rasa',2000)">Pilih</button>
+    <button onclick="watchlist('es cekek semua rasa')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="golda.jpg">
+    <h3>golda</h3>
+    <p>Harga: Rp 5.000</p>
+    <button onclick="pilihFilm('golda',5000)">Pilih</button>
+    <button onclick="watchlist('golda')">❤️</button>
+  </div>
+
+  <div class="item">
+    <img src="granita.jpg">
+    <h3>granita</h3>
+    <p>Harga: Rp 3.000</p>
+    <button onclick="pilihFilm('granita',3000)">Pilih</button>
+    <button onclick="watchlist('granita')">❤️</button>
+  </div>
+
+</div>
+
+<h2>Booking Tiket</h2>
+
+<input type="text" id="nama" placeholder="Nama Pemesan">
+<input type="number" id="jumlah" placeholder="Jumlah Orang">
+<input type="date" id="tanggal">
+
+<select id="pembayaran" onchange="showPayment()">
+  <option value="">Pilih Pembayaran</option>
+  <option value="ewallet">E-Wallet</option>
+  <option value="bank">Bank</option>
+  <option value="qris">QRIS</option>
+  <option value="cash">Cash</option>
+</select>
+
+
+
+<div id="paymentInfo"></div>
+
+<button onclick="booking()">Booking</button>
+
+<h3 id="hasil"></h3>
+
+<script src="bioskop.js"></script>
+</body>
+</html>
